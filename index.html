@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitFrame - Auto Commit & Deploy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>GitFrame</h1>
+            <p class="subtitle">Automated Git Commit & Deploy Tool</p>
+        </header>
+
+        <main>
+            <div class="folder-section">
+                <button id="selectFolder" class="btn primary">Select Folder to Watch</button>
+                <div id="selectedPath" class="path-display"></div>
+            </div>
+
+            <div class="status-section">
+                <div class="status-indicator">
+                    <div id="statusDot" class="status-dot"></div>
+                    <span id="statusText">Not Watching</span>
+                </div>
+                <div class="button-group">
+                    <button id="configureRemote" class="btn secondary">Configure Remote</button>
+                    <button id="stopWatching" class="btn secondary" disabled>Stop Watching</button>
+                </div>
+            </div>
+
+            <div class="log-section">
+                <h2>Activity Log</h2>
+                <div id="logContainer" class="log-container"></div>
+            </div>
+        </main>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html> 
